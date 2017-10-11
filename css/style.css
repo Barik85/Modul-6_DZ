@@ -26,7 +26,7 @@ nav>ul>li>a {
     position: absolute;
     background-color: #ffffff;
     padding: 6px 10px 6px 10px;
-    left: 350px;
+    left: 330px;
     top: 90px;
     border-radius: 2px;
     list-style-type: none;
@@ -73,6 +73,13 @@ main {
     padding: 44px 61px 59px 61px;
     background-color: #ffffff;
     margin: 1px auto 0px auto;
+}
+.left-column {
+    flex: 3;
+    padding: 0px 50px 0px 0px;
+}
+.right-column {
+    flex: 1;
 }
 
 /*footer begin*/
@@ -174,7 +181,7 @@ footer p, .phone{
 .to-top {
     display: block;
     position: fixed;
-    right: 97px;
+    right: 145px;
     bottom: 26px;
 }  
 .clearfix:after {
@@ -199,9 +206,7 @@ h2 {
     margin: 48px 0px 44px 0px;
 }
 /*post begin*/
-.post-data {
-    display: flex;
-}
+
 .date {
     width: 31px;
     height: 31px;
@@ -214,9 +219,94 @@ h2 {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    float: left;
+    margin: 0px 5px 0px 0px;
 }
-
-
-  
-
-
+.title-post p {
+    font-family: 'Arial', sans-serif;
+    font-size: 13px;
+    color: #263555;
+    text-transform: uppercase;
+    margin: 0px 0px 3px 0px;
+}
+.title-post span {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #868f8f;
+}
+.title-post {
+    margin: 0px 0px 0px 10px;
+}
+.comment-count {
+    float: right;
+    margin: 0px 76px 0px 0px;
+}
+.post-data{
+    margin: 50px 0px 15px 0px;
+}
+.post {
+    display: flex;
+    border-bottom: solid 1px #dedbdb;
+    padding: 0px 0px 50px 0px;
+}
+.post p {
+    font: 11px/16px Arial;
+    color: #4e5050;
+    margin: 10px 0px 10px 0px;
+}
+h6 {
+    font-family: Arial;
+    font-size: 13px;
+    color: #263555;
+    line-height: 19px;
+    font-weight: 400;
+}
+.left-column img {
+    display: inline-block;
+    margin: 0px 15px 15px 0px;
+}
+.left-column:last-child {
+    border-bottom: solid 0px #000000 !important;
+}
+a .btn {
+    text-decoration: none;
+}
+.btn {
+    border-radius: 5px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 12px;
+    background: #fbf6fa;
+    padding: 4px 12px 4px 12px;
+    border: solid #9f9696 1px;
+    text-decoration: none;
+}
+/*post END*/
+.right-column ul {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+.right-column ul li {
+    margin: 0px 0px 10px 0px;
+    font-size: 12px;
+    color: #263555;
+}
+.right-column li a {
+    font-size: 12px;
+    color: #263555;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.right-column li a:hover {
+    color: #38afe5;
+}
+.right-column li::before {
+    content: url(../img/right-arrow.png);
+    display: inline-block;
+    position: absolute;
+    right: 221px;
+}
