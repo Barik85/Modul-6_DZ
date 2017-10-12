@@ -282,6 +282,10 @@ a .btn {
     border: solid #9f9696 1px;
     text-decoration: none;
 }
+.btn:hover {
+    color: #ffffff;
+    background-color: #38afe5;
+}
 /*post END*/
 .right-column ul {
     display: inline-block;
