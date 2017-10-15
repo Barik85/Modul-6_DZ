@@ -7,10 +7,10 @@ header {
 }
 nav {
     text-align: center;
-    position: relative;
 }
 nav>ul>li {
     display: inline-block;
+    position: relative;
 }
 nav>ul>li>a {
     text-decoration: none;
@@ -26,8 +26,8 @@ nav>ul>li>a {
     position: absolute;
     background-color: #ffffff;
     padding: 6px 10px 6px 10px;
-    left: 341px;
-    top: 90px;
+    left: 20px;
+    top: 40px;
     border-radius: 2px;
     list-style-type: none;
     opacity: 0;
