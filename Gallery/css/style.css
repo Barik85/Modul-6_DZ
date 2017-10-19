@@ -1,3 +1,4 @@
+@import url("../../main-css/header-footer.css") all;
 body {
     background-image: url(../img/bg.png);
     background-position: center top;
@@ -317,7 +318,11 @@ a .btn {
 .gallery_row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0px 0px 40px 0px;
+}
+.gallery_row div {
+    margin: 20px 0px;
 }
 .gallery_row div a {
     position: relative;
@@ -325,10 +330,11 @@ a .btn {
 .gallery_row div {
     position: relative;
 }
-.gallery_row div a span {
+.gallery_row div a:hover::after {
+    content: " ";
     background-image: url(../img/zoom-in.png);
     background-repeat: no-repeat;
-    display: none;
+    display: block;
     position: absolute;
     width: 50px;
     height: 50px;
@@ -336,8 +342,8 @@ a .btn {
     bottom: 217%;
 }
 .gallery_row div a:hover {
-    filter: grayscale(100%)
+    filter: grayscale(100%);
 }
-.gallery_row div a:hover span {
+.gallery_row div a:hover .gallery_row div a::after {
     display: block;
 }

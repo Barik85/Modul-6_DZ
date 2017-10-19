@@ -1,3 +1,4 @@
+@import url("../../main-css/header-footer.css") all;
 body {
     font-family: Arial;
     background-image: url(../img/bg.png);
@@ -7,8 +8,14 @@ body {
 header {
     margin: 46px auto 51px auto;
 }
-nav {
-    text-align: center;
+nav ul{
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0px auto;
+    flex-wrap: wrap;
 }
 nav>ul>li {
     display: inline-block;
@@ -92,7 +99,10 @@ nav a:active {
     font-size: 16px;
     line-height: 26px;
     display: block;
-    }
+}
+.footer-grey a:hover {
+    color:#38afe5;
+}
 .footer-grey nav a:hover {
     color: #9AD8FF;
 }
@@ -203,12 +213,19 @@ h4{
     line-height: 19px;
 }
 .left-ul {
-    display: inline-block;
+    display: flex;
     font-size: 16px;
     color: #263555;
     line-height: 38px;
     list-style-type: none;
     margin: 32px 0px 0px 24px;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 220px;
+}
+.left-ul li {
+    display: block;
     position: relative;
 }
 .right-ul {
@@ -225,7 +242,7 @@ h4{
     content: url("../img/right-arrow.png");
     display: inline-block;
     position: absolute;
-    right: 227px;
+    left: -20px;
 }
 .right-ul li::before {
     content: url("../img/right-arrow.png");

@@ -1,13 +1,14 @@
-@import url("../../main-css/header-footer.css") all;
-body {
-    background-image: url(../img/bg.png);
-    background-position: center top;
-}
 header {
     margin: 46px auto 51px auto;
 }
-nav {
-    text-align: center;
+nav ul{
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0px auto;
+    flex-wrap: wrap;
 }
 nav>ul>li {
     display: inline-block;
@@ -67,23 +68,6 @@ nav a:active {
 }
 
 /*Headers and menu styles end*/
-
-main {
-    display: flex;
-    box-sizing: border-box;
-    width: 1024px;
-    padding: 44px 61px 59px 61px;
-    background-color: #ffffff;
-    margin: 1px auto 0px auto;
-}
-.left-column {
-    flex: 3;
-    padding: 0px 50px 0px 0px;
-}
-.right-column {
-    flex: 1;
-}
-
 /*footer begin*/
 .footer-grey {
     display: flex;
@@ -109,7 +93,10 @@ main {
     font-size: 16px;
     line-height: 26px;
     display: block;
-    }
+}
+.footer-grey a:hover {
+    color:#38afe5;
+}
 .footer-grey nav a:hover {
     color: #9AD8FF;
 }
@@ -179,147 +166,26 @@ footer p, .phone{
 .copyrights a:hover {
     color: #253455;
 }
-/*footer end*/
 .to-top {
-    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #38afe5;
     position: fixed;
-    right: 155px;
+    right: 110px;
     bottom: 26px;
-}  
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    content: "";
-    clear: both;
-    height: 0;
-}
-h1 {
-    text-transform: uppercase;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 32px;
-    color: #253455;
-    margin: 48px 0px 44px 0px;
-}
-h2 {
-    text-transform: uppercase;
-    font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 32px;
-    color: #263555;
-    margin: 48px 0px 44px 0px;
-}
-/*post begin*/
-
-.date {
-    width: 31px;
-    height: 31px;
-    border-radius: 17px;
-    background-color: #38afe5;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 9px;
     text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    float: left;
-    margin: 0px 5px 0px 0px;
-    box-sizing: border-box;
-    padding: 5px 0px 0px 0px;
 }
-.title-post p {
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    color: #263555;
-    text-transform: uppercase;
-    margin: 0px 0px 3px 0px;
+.to-top:hover {
+    background-color: #263555;
 }
-.title-post span {
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    color: #868f8f;
-}
-.post-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 38px 0px 0px;
-}
-.title-post {
-    margin: 0px 0px 0px 10px;
-}
-.comment-count {
-    float: right;
-    margin: 0px 76px 0px 0px;
-}
-.post-data{
-    margin: 50px 0px 15px 0px;
-}
-.post {
-    display: flex;
-    border-bottom: solid 1px #dedbdb;
-    padding: 0px 0px 50px 0px;
-}
-.post p {
-    font: 11px/16px Arial;
-    color: #4e5050;
-    margin: 10px 0px 10px 0px;
-}
-h6 {
-    font-family: Arial;
-    font-size: 13px;
-    color: #263555;
-    line-height: 19px;
-    font-weight: 400;
-}
-.left-column img {
-    display: inline-block;
-    margin: 0px 15px 15px 0px;
-}
-.left-column:last-child {
-    border-bottom: solid 0px #000000 !important;
-}
-a .btn {
-    text-decoration: none;
-}
-.btn {
-    border-radius: 5px;
-    font-family: Arial;
-    color: #000000;
-    font-size: 12px;
-    background: #fbf6fa;
-    padding: 4px 12px 4px 12px;
-    border: solid #9f9696 1px;
-    text-decoration: none;
-}
-.btn:hover {
-    color: #ffffff;
-    background-color: #38afe5;
-}
-/*post END*/
-.right-column ul {
-    display: inline-block;
-    list-style-type: none;
+.top-arrow {
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(135deg);
+    border-radius: 2px;
+    margin: auto;
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-}
-.right-column ul li {
-    margin: 0px 0px 10px 0px;
-    font-size: 12px;
-    color: #263555;
-}
-.right-column li a {
-    font-size: 12px;
-    color: #263555;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-}
-.right-column li a:hover {
-    color: #38afe5;
-}
-.right-column li::before {
-    content: url(../img/right-arrow.png);
-    display: inline-block;
-    position: absolute;
-    right: 221px;
-}
+    top: 12px;
